@@ -35,15 +35,11 @@ contract KingGame {
     
     
     
-    // events 
     event NextPotOwner (address indexed sender, uint256 amount);
     event Deposited (address indexed sender, uint256 amount);
     event GameOver (address indexed king);
     event ResetGame(uint256 _blockFlag);
 
-    // event Received (address indexed sender, uint256 amount);
-
-    // libraries
     using Address for address payable; 
 
     
@@ -57,7 +53,6 @@ contract KingGame {
     }
 
 
-   // modifiers
     modifier onlyOwner() {
         require(
             msg.sender == _contractOwner, 
@@ -144,7 +139,6 @@ contract KingGame {
     }
     
 
-    // testing functions
     function getPotTotal() public view returns(uint) {
         return _potTotal;
     }
@@ -155,7 +149,6 @@ contract KingGame {
         return address(this).balance;
     }
 
-        // testing functions
     function getPotOWner() public view returns(address) {
         return _potOwner;
     }
