@@ -12,7 +12,6 @@ import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contr
 
 /// @dev Network: Rinkeby
 /// @dev Contract address: 0x58e5D09b6Cea2D6DC4e4EA1E6090D52E47BE19a3
-/// @dev Contract Owner: 0xa881245D7A4214ea3103D136980A614ee7f3f64b
 
 contract KingGame {
 
